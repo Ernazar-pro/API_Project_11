@@ -17,7 +17,7 @@ class BookingViewSet(ModelViewSet):
     serializer_class = BookingSerializer
 
 class GuestViewSet(ModelViewSet):
-    queryset = Guest
+    queryset = Guest.objects.all()
     serializer_class = GuestSerializer
 
 class RoomViewSet(ModelViewSet):
