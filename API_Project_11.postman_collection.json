@@ -1,0 +1,889 @@
+{
+	"info": {
+		"_postman_id": "e066c6a4-3a2e-4110-96ba-7359e34f46b9",
+		"name": "API_Project_11",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29962217"
+	},
+	"item": [
+		{
+			"name": "Hotel",
+			"item": [
+				{
+					"name": "Get list",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjk5NTQ4NTA5LCJpYXQiOjE2OTgzMzg5MDksImp0aSI6IjNhMDIzYzQ0MzExMTQ2ODQ5ZTFlMmEyZmM0OWU5MTE4IiwidXNlcl9pZCI6MX0.kmCBgW4Vv_72N3gTpfIg0z3ZePo9n72LMM1rdWAMdus",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "https://ernazar1jumaniyazov.pythonanywhere.com/api/hotel/",
+							"protocol": "https",
+							"host": [
+								"ernazar1jumaniyazov",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"api",
+								"hotel",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjk5NTQ4NTA5LCJpYXQiOjE2OTgzMzg5MDksImp0aSI6IjNhMDIzYzQ0MzExMTQ2ODQ5ZTFlMmEyZmM0OWU5MTE4IiwidXNlcl9pZCI6MX0.kmCBgW4Vv_72N3gTpfIg0z3ZePo9n72LMM1rdWAMdus",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Tashkent",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "Mm",
+									"type": "text"
+								},
+								{
+									"key": "city",
+									"value": "Nukus",
+									"type": "text"
+								},
+								{
+									"key": "country",
+									"value": "Uzbekistan",
+									"type": "text"
+								},
+								{
+									"key": "rating",
+									"value": "3.5",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://ernazar1jumaniyazov.pythonanywhere.com/api/hotel/",
+							"protocol": "https",
+							"host": [
+								"ernazar1jumaniyazov",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"api",
+								"hotel",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get detail",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjk5NTQ4NTA5LCJpYXQiOjE2OTgzMzg5MDksImp0aSI6IjNhMDIzYzQ0MzExMTQ2ODQ5ZTFlMmEyZmM0OWU5MTE4IiwidXNlcl9pZCI6MX0.kmCBgW4Vv_72N3gTpfIg0z3ZePo9n72LMM1rdWAMdus",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://ernazar1jumaniyazov.pythonanywhere.com/api/hotel/2/",
+							"protocol": "https",
+							"host": [
+								"ernazar1jumaniyazov",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"api",
+								"hotel",
+								"2",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Patch",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjk5NTQ4NTA5LCJpYXQiOjE2OTgzMzg5MDksImp0aSI6IjNhMDIzYzQ0MzExMTQ2ODQ5ZTFlMmEyZmM0OWU5MTE4IiwidXNlcl9pZCI6MX0.kmCBgW4Vv_72N3gTpfIg0z3ZePo9n72LMM1rdWAMdus",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "city",
+									"value": "Nukus, Karakalpalstan",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://ernazar1jumaniyazov.pythonanywhere.com/api/hotel/2/",
+							"protocol": "https",
+							"host": [
+								"ernazar1jumaniyazov",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"api",
+								"hotel",
+								"2",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjk5NTQ4NTA5LCJpYXQiOjE2OTgzMzg5MDksImp0aSI6IjNhMDIzYzQ0MzExMTQ2ODQ5ZTFlMmEyZmM0OWU5MTE4IiwidXNlcl9pZCI6MX0.kmCBgW4Vv_72N3gTpfIg0z3ZePo9n72LMM1rdWAMdus",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://ernazar1jumaniyazov.pythonanywhere.com/api/hotel/2/",
+							"protocol": "https",
+							"host": [
+								"ernazar1jumaniyazov",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"api",
+								"hotel",
+								"2",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Room",
+			"item": [
+				{
+					"name": "Get list",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjk5NTQ4NTA5LCJpYXQiOjE2OTgzMzg5MDksImp0aSI6IjNhMDIzYzQ0MzExMTQ2ODQ5ZTFlMmEyZmM0OWU5MTE4IiwidXNlcl9pZCI6MX0.kmCBgW4Vv_72N3gTpfIg0z3ZePo9n72LMM1rdWAMdus",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://ernazar1jumaniyazov.pythonanywhere.com/api/room",
+							"protocol": "https",
+							"host": [
+								"ernazar1jumaniyazov",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"api",
+								"room"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjk5NTQ4NTA5LCJpYXQiOjE2OTgzMzg5MDksImp0aSI6IjNhMDIzYzQ0MzExMTQ2ODQ5ZTFlMmEyZmM0OWU5MTE4IiwidXNlcl9pZCI6MX0.kmCBgW4Vv_72N3gTpfIg0z3ZePo9n72LMM1rdWAMdus",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "number",
+									"value": "40",
+									"type": "text"
+								},
+								{
+									"key": "capacity",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "price_per_night",
+									"value": "150",
+									"type": "text"
+								},
+								{
+									"key": "hotel",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://ernazar1jumaniyazov.pythonanywhere.com/api/room/",
+							"protocol": "https",
+							"host": [
+								"ernazar1jumaniyazov",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"api",
+								"room",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get detail",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjk5NTQ4NTA5LCJpYXQiOjE2OTgzMzg5MDksImp0aSI6IjNhMDIzYzQ0MzExMTQ2ODQ5ZTFlMmEyZmM0OWU5MTE4IiwidXNlcl9pZCI6MX0.kmCBgW4Vv_72N3gTpfIg0z3ZePo9n72LMM1rdWAMdus",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://ernazar1jumaniyazov.pythonanywhere.com/api/room/2/",
+							"protocol": "https",
+							"host": [
+								"ernazar1jumaniyazov",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"api",
+								"room",
+								"2",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Patch",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjk5NTQ4NTA5LCJpYXQiOjE2OTgzMzg5MDksImp0aSI6IjNhMDIzYzQ0MzExMTQ2ODQ5ZTFlMmEyZmM0OWU5MTE4IiwidXNlcl9pZCI6MX0.kmCBgW4Vv_72N3gTpfIg0z3ZePo9n72LMM1rdWAMdus",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "price_per_night",
+									"value": "250",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://ernazar1jumaniyazov.pythonanywhere.com/api/room/1/",
+							"protocol": "https",
+							"host": [
+								"ernazar1jumaniyazov",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"api",
+								"room",
+								"1",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjk5NTQ4NTA5LCJpYXQiOjE2OTgzMzg5MDksImp0aSI6IjNhMDIzYzQ0MzExMTQ2ODQ5ZTFlMmEyZmM0OWU5MTE4IiwidXNlcl9pZCI6MX0.kmCBgW4Vv_72N3gTpfIg0z3ZePo9n72LMM1rdWAMdus",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://ernazar1jumaniyazov.pythonanywhere.com/api/room/2/",
+							"protocol": "https",
+							"host": [
+								"ernazar1jumaniyazov",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"api",
+								"room",
+								"2",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Booking",
+			"item": [
+				{
+					"name": "Get list",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjk5NTQ4NTA5LCJpYXQiOjE2OTgzMzg5MDksImp0aSI6IjNhMDIzYzQ0MzExMTQ2ODQ5ZTFlMmEyZmM0OWU5MTE4IiwidXNlcl9pZCI6MX0.kmCBgW4Vv_72N3gTpfIg0z3ZePo9n72LMM1rdWAMdus",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://ernazar1jumaniyazov.pythonanywhere.com/api/booking/",
+							"protocol": "https",
+							"host": [
+								"ernazar1jumaniyazov",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"api",
+								"booking",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjk5NTQ4NTA5LCJpYXQiOjE2OTgzMzg5MDksImp0aSI6IjNhMDIzYzQ0MzExMTQ2ODQ5ZTFlMmEyZmM0OWU5MTE4IiwidXNlcl9pZCI6MX0.kmCBgW4Vv_72N3gTpfIg0z3ZePo9n72LMM1rdWAMdus",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "check_in_date",
+									"value": "2023-10-26",
+									"type": "text"
+								},
+								{
+									"key": "check_out_date",
+									"value": "2023-10-26",
+									"type": "text"
+								},
+								{
+									"key": "is_paid",
+									"value": "false",
+									"type": "text"
+								},
+								{
+									"key": "room",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "guest",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://ernazar1jumaniyazov.pythonanywhere.com/api/booking/",
+							"protocol": "https",
+							"host": [
+								"ernazar1jumaniyazov",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"api",
+								"booking",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get detail",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjk5NTQ4NTA5LCJpYXQiOjE2OTgzMzg5MDksImp0aSI6IjNhMDIzYzQ0MzExMTQ2ODQ5ZTFlMmEyZmM0OWU5MTE4IiwidXNlcl9pZCI6MX0.kmCBgW4Vv_72N3gTpfIg0z3ZePo9n72LMM1rdWAMdus",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://ernazar1jumaniyazov.pythonanywhere.com/api/booking/1/",
+							"protocol": "https",
+							"host": [
+								"ernazar1jumaniyazov",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"api",
+								"booking",
+								"1",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Patch",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjk5NTQ4NTA5LCJpYXQiOjE2OTgzMzg5MDksImp0aSI6IjNhMDIzYzQ0MzExMTQ2ODQ5ZTFlMmEyZmM0OWU5MTE4IiwidXNlcl9pZCI6MX0.kmCBgW4Vv_72N3gTpfIg0z3ZePo9n72LMM1rdWAMdus",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "guest",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://ernazar1jumaniyazov.pythonanywhere.com/api/booking/2/",
+							"protocol": "https",
+							"host": [
+								"ernazar1jumaniyazov",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"api",
+								"booking",
+								"2",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjk5NTQ4NTA5LCJpYXQiOjE2OTgzMzg5MDksImp0aSI6IjNhMDIzYzQ0MzExMTQ2ODQ5ZTFlMmEyZmM0OWU5MTE4IiwidXNlcl9pZCI6MX0.kmCBgW4Vv_72N3gTpfIg0z3ZePo9n72LMM1rdWAMdus",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://ernazar1jumaniyazov.pythonanywhere.com/api/booking/2/",
+							"protocol": "https",
+							"host": [
+								"ernazar1jumaniyazov",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"api",
+								"booking",
+								"2",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Guest",
+			"item": [
+				{
+					"name": "Guest",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjk5NTQ4NTA5LCJpYXQiOjE2OTgzMzg5MDksImp0aSI6IjNhMDIzYzQ0MzExMTQ2ODQ5ZTFlMmEyZmM0OWU5MTE4IiwidXNlcl9pZCI6MX0.kmCBgW4Vv_72N3gTpfIg0z3ZePo9n72LMM1rdWAMdus",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://ernazar1jumaniyazov.pythonanywhere.com/api/guest",
+							"protocol": "https",
+							"host": [
+								"ernazar1jumaniyazov",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"api",
+								"guest"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjk5NTQ4NTA5LCJpYXQiOjE2OTgzMzg5MDksImp0aSI6IjNhMDIzYzQ0MzExMTQ2ODQ5ZTFlMmEyZmM0OWU5MTE4IiwidXNlcl9pZCI6MX0.kmCBgW4Vv_72N3gTpfIg0z3ZePo9n72LMM1rdWAMdus",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "first_name",
+									"value": "Alibek",
+									"type": "text"
+								},
+								{
+									"key": "last_name",
+									"value": "Djoldasov",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "I don't know",
+									"type": "text"
+								},
+								{
+									"key": "phone_number",
+									"value": "?????????????",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://ernazar1jumaniyazov.pythonanywhere.com/api/guest/",
+							"protocol": "https",
+							"host": [
+								"ernazar1jumaniyazov",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"api",
+								"guest",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get detail",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjk5NTQ4NTA5LCJpYXQiOjE2OTgzMzg5MDksImp0aSI6IjNhMDIzYzQ0MzExMTQ2ODQ5ZTFlMmEyZmM0OWU5MTE4IiwidXNlcl9pZCI6MX0.kmCBgW4Vv_72N3gTpfIg0z3ZePo9n72LMM1rdWAMdus",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://ernazar1jumaniyazov.pythonanywhere.com/api/guest/3/",
+							"protocol": "https",
+							"host": [
+								"ernazar1jumaniyazov",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"api",
+								"guest",
+								"3",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Patch",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjk5NTQ4NTA5LCJpYXQiOjE2OTgzMzg5MDksImp0aSI6IjNhMDIzYzQ0MzExMTQ2ODQ5ZTFlMmEyZmM0OWU5MTE4IiwidXNlcl9pZCI6MX0.kmCBgW4Vv_72N3gTpfIg0z3ZePo9n72LMM1rdWAMdus",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "last_name",
+									"value": "Alibek",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://ernazar1jumaniyazov.pythonanywhere.com/api/guest/3/",
+							"protocol": "https",
+							"host": [
+								"ernazar1jumaniyazov",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"api",
+								"guest",
+								"3",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjk5NTQ4NTA5LCJpYXQiOjE2OTgzMzg5MDksImp0aSI6IjNhMDIzYzQ0MzExMTQ2ODQ5ZTFlMmEyZmM0OWU5MTE4IiwidXNlcl9pZCI6MX0.kmCBgW4Vv_72N3gTpfIg0z3ZePo9n72LMM1rdWAMdus",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://ernazar1jumaniyazov.pythonanywhere.com/api/guest/3/",
+							"protocol": "https",
+							"host": [
+								"ernazar1jumaniyazov",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"api",
+								"guest",
+								"3",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Get Token JWT",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "55555",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "55555",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://ernazar1jumaniyazov.pythonanywhere.com/api/token/",
+					"protocol": "https",
+					"host": [
+						"ernazar1jumaniyazov",
+						"pythonanywhere",
+						"com"
+					],
+					"path": [
+						"api",
+						"token",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
